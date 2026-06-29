@@ -1,16 +1,20 @@
-export default function TaskList() {
+export default function RecentActivity() {
+  const activities = [
+    "Vídeo publicado",
+    "Workflow executado",
+    "Prompt atualizado",
+    "Backup realizado",
+  ];
+
   return (
-    <section>
-      <h2>Atividade Recente</h2>
-      Atividade recente
+    <section className="mb-10 rounded-xl border border-zinc-800 bg-zinc-900 p-6">
+      <h2 className="text-xl font-semibold">Atividade recente</h2>
 
-✓ Vídeo publicado
-
-✓ Workflow executado
-
-✓ Prompt atualizado
-
-✓ Backup realizado
+      <div className="mt-4 space-y-2">
+        {activities.map((activity) => (
+          <p key={activity}>✅ {activity}</p>
+        ))}
+      </div>
     </section>
   );
 }
