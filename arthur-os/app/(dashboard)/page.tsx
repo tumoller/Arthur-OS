@@ -8,7 +8,7 @@ import TaskList from "@/components/home/TaskList";
 export default function Page() {
   return (
     <div className="space-y-6">
-      <h1 className="text-red-500">Tailwind está funcionando</h1>
+      <h1 className="text-red-500">Tailwind está funcionando e só isso.</h1>
       <Hero />
       <StatsGrid />
 
